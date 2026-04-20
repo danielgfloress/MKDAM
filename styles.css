@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: rgb(100, 255, 60);
+}
+.header__img{
+    height: 150px;
+    width: 150px;
+}
+.header__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 70px;
+    gap: 100px;
+}
+.nav__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid rgb(100, 255, 60);
+    color: rgb(100, 255, 60);
+    height: 50px;
+    width: 150px;
+    box-shadow: 0 0 0px rgb(100, 255, 60), 0 0 0px rgb(100, 255, 60),0 0 10px rgb(100, 255, 60),0 0 20px rgb(100, 255, 60);
+}
