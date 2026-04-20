@@ -1,3 +1,6 @@
+:root{
+    --green-color: rgb(100, 255, 60);
+}
 body{
     margin: 0;
     font-family: 'Bebas Neue', sans-serif;
@@ -7,7 +10,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background-color: black;
-    color: rgb(100, 255, 60);
+    color: var(--green-color);
 }
 .header__img{
     height: 150px;
@@ -32,9 +35,35 @@ body{
     align-items: center;
     text-decoration: none;
     border-radius: 10px;
-    border: 1px solid rgb(100, 255, 60);
-    color: rgb(100, 255, 60);
+    border: 1px solid var(--green-color);
+    color: var(--green-color);
     height: 50px;
     width: 150px;
-    box-shadow: 0 0 0px rgb(100, 255, 60), 0 0 0px rgb(100, 255, 60),0 0 10px rgb(100, 255, 60),0 0 20px rgb(100, 255, 60);
+    box-shadow: 0 0 0px var(--green-color), 0 0 0px var(--green-color),0 0 10px var(--green-color),0 0 20px var(--green-color);
+}
+.conocenos{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgba(22, 91, 147, 0.381), rgba(7, 100, 134, 0.792)), url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/6b/43/24/getlstd-property-photo.jpg?w=900&h=500&s=1);
+    height: 600px;
+}
+.conocenos__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid var(--green-color);
+    background-color: black;
+    color: var(--green-color);
+    margin-bottom: 80px;
+    font-size: 26px;
+    height: 70px;
+    width: 250px;
+    box-shadow: 0 0 0px var(--green-color), 0 0 0px var(--green-color),0 0 10px var(--green-color),0 0 20px var(--green-color);
 }
