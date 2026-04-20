@@ -13,8 +13,8 @@ body{
     color: var(--green-color);
 }
 .header__img{
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
 }
 .header__container{
     display: flex;
@@ -27,19 +27,21 @@ body{
     justify-content: center;
     align-items: center;
     margin-right: 70px;
-    gap: 100px;
 }
 .nav__link{
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    border-radius: 10px;
-    border: 1px solid var(--green-color);
-    color: var(--green-color);
+    border-radius: 999px;
+    font-size: 20px;
+    color:white;
     height: 50px;
     width: 150px;
-    box-shadow: 0 0 0px var(--green-color), 0 0 0px var(--green-color),0 0 10px var(--green-color),0 0 20px var(--green-color);
+    
+}
+.nav__link:hover{
+    background-color: rgba(142, 141, 141, 0.735);
 }
 .conocenos{
     display: flex;
@@ -66,4 +68,7 @@ body{
     height: 70px;
     width: 250px;
     box-shadow: 0 0 0px var(--green-color), 0 0 0px var(--green-color),0 0 10px var(--green-color),0 0 20px var(--green-color);
+}
+.conocenos__link:hover{
+    color: white;
 }
