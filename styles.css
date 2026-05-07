@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 8%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .logo-img {
@@ -77,6 +77,7 @@ header {
     margin: 0 0 20px 0;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
+
 .seccion1 {
     padding: 40px 8%;
     background: var(--fondo-sec);
@@ -117,7 +118,7 @@ header {
     height: 280px;
     margin-right: 20px;
     padding: 15px;
-    background: rgb(20,20,25);
+    background: rgb(20, 20, 25);
     border-radius: 10px;
     border: 1px solid var(--rosa-oscuro);
     text-align: center;
@@ -131,7 +132,8 @@ header {
     border-radius: 8px;
 }
 
-.card p, .card h3 {
+.card p,
+.card h3 {
     color: var(--texto);
 }
 
@@ -140,12 +142,13 @@ header {
     box-shadow: 0 0 15px var(--rosa-principal);
 }
 
-.prev, .next {
+.prev,
+.next {
     width: 45px;
     height: 45px;
     border-radius: 50%;
     border: 1px solid var(--rosa-principal);
-    background: rgba(0,0,0,0.7);
+    background: rgba(0, 0, 0, 0.7);
     color: var(--rosa-principal);
     font-size: 22px;
     display: flex;
@@ -188,9 +191,82 @@ footer {
     color: var(--fondo);
     box-shadow: 0 0 20px var(--rosa-principal);
 }
+
 .card__precio {
     color: var(--rosa-principal);
     font-size: 15px;
     font-weight: bold;
     margin: 4px 0 0 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 5%;
+    }
+
+    .logo-img {
+        height: 70px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav__a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .hero {
+        height: 50vh;
+        background-size: contain;
+    }
+
+    .hero__titulo {
+        font-size: 1.6rem;
+    }
+
+    .hero__overlay {
+        padding-bottom: 30px;
+    }
+
+    .seccion1,
+    .seccion2 {
+        padding: 30px 5%;
+    }
+
+    .carrusel {
+        width: 260px;
+    }
+
+    .carrusel-wrapper {
+        gap: 8px;
+    }
+
+    .prev,
+    .next {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .sabores-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        min-width: unset;
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        height: 130px;
+    }
 }
