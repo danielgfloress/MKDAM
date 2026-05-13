@@ -292,3 +292,374 @@ footer {
         font-size: 12px;
     }
 }
+
+/* SABORES ALVARO */
+
+
+.sabores-hero {
+   width: 100%;
+    height: 80vh;
+    background: url("images/WhatsApp\ Image\ 2026-04-23\ at\ 13.32.17.jpeg") center/contain no-repeat;
+}
+
+.sabores-hero__overlay {
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sabores-hero-content {
+    text-align: center;
+}
+
+.sabores-hero__titulo {
+    color: white;
+    font-size: 3rem;
+}
+
+.sabores-hero__texto {
+    color: var(--texto);
+    font-size: 18px;
+}
+
+.sabores-section {
+    padding: 50px 8%;
+    background: var(--fondo-sec);
+}
+
+.sabores-h2 {
+    color: var(--rosa-principal);
+    margin-bottom: 30px;
+}
+
+.sabores-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+
+.sabores-card {
+
+    background: rgb(20,20,25);
+
+    border: 1px solid var(--rosa-oscuro);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.sabores-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px var(--rosa-principal);
+}
+
+.sabores-card__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.sabores-card__nombre {
+    color: white;
+    text-align: center;
+}
+
+.sabores-card__descripcion {
+    color: rgb(180,180,180);
+    text-align: center;
+    padding: 0 15px;
+}
+
+.sabores-card__precio {
+    color: var(--rosa-principal);
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.sabores-card__overlay {
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.sabores-card:hover .sabores-card__overlay {
+    opacity: 1;
+}
+
+.sabores-btn {
+
+    padding: 12px 24px;
+
+    border: none;
+
+    background: var(--rosa-principal);
+
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.sabores-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+.sabores-popup {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.8);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.sabores-popup-content {
+
+    width: 700px;
+
+    background: rgb(20,20,25);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    position: relative;
+
+    animation: popup 0.3s ease;
+}
+
+.sabores-popup-img {
+
+    width: 50%;
+
+    object-fit: cover;
+}
+
+.sabores-popup-info {
+
+    padding: 30px;
+
+    color: white;
+}
+
+#popupPrice {
+
+    color: var(--rosa-principal);
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.sabores-popup-close {
+
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+
+    color: white;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+
+.sabores-extra {
+
+    padding: 60px 8%;
+
+    background: rgb(12,12,18);
+}
+
+.sabores-mixes {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+.mix-card {
+
+    background: rgb(20,20,25);
+
+    border: 1px solid var(--rosa-oscuro);
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.mix-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 0 15px var(--rosa-principal);
+}
+
+.mix-card h3 {
+
+    color: white;
+}
+
+.mix-card p {
+
+    color: rgb(180,180,180);
+}
+
+
+
+.sabores-banner {
+
+    width: 100%;
+    height: 80vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)),
+        url("images/WhatsApp\ Image\ 2026-04-23\ at\ 13.53.59.jpeg") center/cover no-repeat;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+.sabores-banner__overlay h2 {
+
+    color: white;
+
+    font-size: 40px;
+}
+
+.sabores-banner__overlay p {
+
+    color: rgb(220,220,220);
+
+    margin-bottom: 25px;
+}
+
+.sabores-banner-btn {
+
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background: var(--rosa-principal);
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.sabores-banner-btn:hover {
+
+    transform: scale(1.08);
+
+    box-shadow: 0 0 15px var(--rosa-principal);
+}
+
+
+
+@media (max-width: 768px) {
+
+    .sabores-mixes {
+
+        grid-template-columns: 1fr;
+    }
+
+    .sabores-banner__overlay h2 {
+
+        font-size: 28px;
+    }
+
+}
+@keyframes popup {
+
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+
+    .sabores-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sabores-popup-content {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .sabores-popup-img {
+        width: 100%;
+        height: 250px;
+    }
+
+}
