@@ -663,3 +663,27 @@ footer {
     }
 
 }
+
+.card {
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.carrusel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.card {
+    min-width: 250px;
+}
+
