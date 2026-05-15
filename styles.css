@@ -297,7 +297,7 @@ footer {
 
 
 .sabores-hero {
-   width: 100%;
+    width: 100%;
     height: 80vh;
     background: url("images/WhatsApp\ Image\ 2026-04-23\ at\ 13.32.17.jpeg") center/contain no-repeat;
 }
@@ -900,3 +900,278 @@ footer {
     min-width: 250px;
 }
 
+/* CAZOLETAS DANX */
+
+.cazoletas-hero {
+
+    width: 100%;
+    height: 80vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)),
+        url("images/cazoletas-banner.jpg") center/cover no-repeat;
+}
+
+.cazoletas-hero__overlay {
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cazoletas-hero-content {
+
+    text-align: center;
+}
+
+.cazoletas-hero__titulo {
+
+    color: white;
+    font-size: 3rem;
+}
+
+.cazoletas-hero__texto {
+
+    color: var(--texto);
+}
+
+.cazoletas-section {
+
+    padding: 50px 8%;
+    background: var(--fondo-sec);
+}
+
+.cazoletas-h2 {
+
+    color: var(--rosa-principal);
+    margin-bottom: 30px;
+}
+
+.cazoletas-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+    gap: 25px;
+}
+
+.cazoletas-card {
+
+    background: rgb(20,20,25);
+
+    border: 1px solid var(--rosa-oscuro);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.cazoletas-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 20px var(--rosa-principal);
+}
+
+.cazoletas-card__img {
+
+    width: 100%;
+    height: 250px;
+
+    object-fit: contain;
+
+    background: white;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+
+}
+
+.cazoletas-card__nombre {
+
+    color: white;
+
+    text-align: center;
+}
+
+.cazoletas-card__descripcion {
+
+    color: rgb(180,180,180);
+
+    text-align: center;
+
+    padding: 0 15px;
+}
+
+.cazoletas-card__precio {
+
+    color: var(--rosa-principal);
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.cazoletas-card__overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    transition: 0.3s;
+}
+
+.cazoletas-card:hover .cazoletas-card__overlay {
+
+    opacity: 1;
+}
+
+.cazoletas-btn {
+
+    padding: 12px 24px;
+
+    border: none;
+
+    background: var(--rosa-principal);
+
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.cazoletas-popup {
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.8);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.cazoletas-popup-content {
+
+    width: 700px;
+
+    background: rgb(20,20,25);
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    position: relative;
+}
+
+.cazoletas-popup-img {
+
+    width: 50%;
+
+    object-fit: cover;
+}
+
+.cazoletas-popup-info {
+
+    padding: 30px;
+
+    color: white;
+}
+
+.cazoletas-popup-close {
+
+    position: absolute;
+
+    top: 10px;
+    right: 20px;
+
+    color: white;
+
+    font-size: 35px;
+
+    cursor: pointer;
+}
+
+#popupPrice {
+
+    color: var(--rosa-principal);
+
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+.cazoletas-extra {
+
+    padding: 60px 8%;
+
+    background: rgb(12,12,18);
+}
+
+.cazoletas-mixes {
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+
+@media(max-width:768px){
+
+    .cazoletas-grid {
+
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .cazoletas-mixes {
+
+        grid-template-columns: 1fr;
+    }
+
+    .cazoletas-popup-content {
+
+        width: 90%;
+
+        flex-direction: column;
+    }
+
+    .cazoletas-popup-img {
+
+        width: 100%;
+        height: 250px;
+    }
+
+}
