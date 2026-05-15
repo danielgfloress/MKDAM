@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MN Panther - Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/WhatsApp Image 2026-04-23 at 13.53.59.jpeg" class="logo-img">
+        <nav>
+            <a class="nav__a" href="index.html">Inicio</a>
+            <a class="nav__a" href="cachimbas.html">Cachimbas</a>
+            <a class="nav__a" href="sabores.html">Sabores</a>
+            <a class="nav__a" href="mangueras.html">Mangueras</a>
+            <a class="nav__a" href="cazoletas.html">Cazoletas</a>
+            <a class="nav__a active" href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Hero igual que sabores -->
+    <section class="sabores-hero">
+        <div class="sabores-hero__overlay">
+            <div class="sabores-hero-content">
+                <h1 class="sabores-hero__titulo">Contacto</h1>
+                <p class="sabores-hero__texto">Estamos aquí para ayudarte con cualquier consulta</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección principal de contacto -->
+    <section class="contacto-section">
+
+        <div class="contacto-grid">
+
+            <!-- Formulario -->
+            <div class="contacto-form-box">
+                <h2 class="sabores-h2">Envíanos un Mensaje</h2>
+
+                <div class="contacto-form">
+
+                    <div class="form-group">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" class="form-input" placeholder="Tu nombre completo" id="inputNombre">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-input" placeholder="tu@email.com" id="inputEmail">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Asunto</label>
+                        <select class="form-input form-select" id="inputAsunto">
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="pedido">Consulta sobre pedido</option>
+                            <option value="producto">Información de producto</option>
+                            <option value="envio">Información de envío</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Mensaje</label>
+                        <textarea class="form-input form-textarea" placeholder="Escribe tu mensaje aquí..." id="inputMensaje"></textarea>
+                    </div>
+
+                    <button class="contacto-btn" id="btnEnviar">
+                        Enviar Mensaje
+                    </button>
+
+                    <div class="form-success" id="formSuccess">
+                        ✓ Mensaje enviado correctamente. Te contactaremos pronto.
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Info de contacto -->
+            <div class="contacto-info-box">
+
+                <h2 class="sabores-h2">Información</h2>
+
+                <div class="contacto-info-cards">
+
+                    <div class="contacto-info-card">
+                        <div class="contacto-info-icon">📍</div>
+                        <div>
+                            <h3 class="contacto-info-titulo">Ubicación</h3>
+                            <p class="contacto-info-texto">Madrid, España</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-info-card">
+                        <div class="contacto-info-icon">📞</div>
+                        <div>
+                            <h3 class="contacto-info-titulo">Teléfono</h3>
+                            <p class="contacto-info-texto">+34 600 000 000</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-info-card">
+                        <div class="contacto-info-icon">✉️</div>
+                        <div>
+                            <h3 class="contacto-info-titulo">Email</h3>
+                            <p class="contacto-info-texto">info@mnpanther.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-info-card">
+                        <div class="contacto-info-icon">🕐</div>
+                        <div>
+                            <h3 class="contacto-info-titulo">Horario</h3>
+                            <p class="contacto-info-texto">Lun – Vie: 10:00 – 20:00</p>
+                            <p class="contacto-info-texto">Sáb: 11:00 – 18:00</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Redes sociales -->
+                <div class="contacto-rrss">
+                    <h3 class="contacto-rrss-titulo">Síguenos</h3>
+                    <div class="contacto-rrss-links">
+                        <a href="#" class="contacto-rrss-btn">Instagram</a>
+                        <a href="#" class="contacto-rrss-btn">TikTok</a>
+                        <a href="#" class="contacto-rrss-btn">WhatsApp</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Banner final igual que sabores -->
+    <section class="sabores-banner">
+        <div class="sabores-banner__overlay">
+            <h2>¿Prefieres escribirnos directamente?</h2>
+            <p>También puedes contactarnos por WhatsApp para una respuesta más rápida.</p>
+            <a href="https://wa.me/34600000000" class="sabores-banner-btn">Abrir WhatsApp</a>
+        </div>
+    </section>
+
+    <footer>
+        <p class="footer__texto">© MN Panther</p>
+    </footer>
+
+    <script src="contacto.js"></script>
+
+</body>
+
+</html>
